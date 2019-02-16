@@ -145,17 +145,147 @@ root@wats3020:~# ls -a .demo*
 ### Observing the System
 
 * Discover what account you are logged into using the `whoami` command. *What username are you currently using?*
-* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*
+root
+
+
+* Discover who else is on your system with the `who` command. *Are any other users using your system? If so, list them here:*  
+root     pts/0        2019-02-16 20:47 (73.97.141.94)
+
+
 * How long has your system been running? Use `uptime` to see, and *paste the result here:*
-* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*
+ 21:55:24 up  1:09,  1 user,  load average: 0.00, 0.00, 0.00
+
+
+* Run `ps aux` and review the results. (Hint: Use `man` to learn more about the `ps` command and options.) *How do you interpret what you see here?*  
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.8  77628  8540 ?        Ss   20:46   0:01 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    20:46   0:00 [kthreadd]
+root         4  0.0  0.0      0     0 ?        I<   20:46   0:00 [kworker/0:0H]
+root         6  0.0  0.0      0     0 ?        I<   20:46   0:00 [mm_percpu_wq]
+root         7  0.0  0.0      0     0 ?        S    20:46   0:00 [ksoftirqd/0]
+root         8  0.0  0.0      0     0 ?        I    20:46   0:00 [rcu_sched]
+root         9  0.0  0.0      0     0 ?        I    20:46   0:00 [rcu_bh]
+root        10  0.0  0.0      0     0 ?        S    20:46   0:00 [migration/0]
+root        11  0.0  0.0      0     0 ?        S    20:46   0:00 [watchdog/0]
+root        12  0.0  0.0      0     0 ?        S    20:46   0:00 [cpuhp/0]
+root        13  0.0  0.0      0     0 ?        S    20:46   0:00 [kdevtmpfs]
+root        14  0.0  0.0      0     0 ?        I<   20:46   0:00 [netns]
+root        15  0.0  0.0      0     0 ?        S    20:46   0:00 [rcu_tasks_kthre]
+root        16  0.0  0.0      0     0 ?        S    20:46   0:00 [kauditd]
+root        17  0.0  0.0      0     0 ?        S    20:46   0:00 [khungtaskd]
+root        18  0.0  0.0      0     0 ?        S    20:46   0:00 [oom_reaper]
+root        19  0.0  0.0      0     0 ?        I<   20:46   0:00 [writeback]
+root        20  0.0  0.0      0     0 ?        S    20:46   0:00 [kcompactd0]
+root        21  0.0  0.0      0     0 ?        SN   20:46   0:00 [ksmd]
+root        22  0.0  0.0      0     0 ?        SN   20:46   0:00 [khugepaged]
+root        23  0.0  0.0      0     0 ?        I<   20:46   0:00 [crypto]
+root        24  0.0  0.0      0     0 ?        I<   20:46   0:00 [kintegrityd]
+root        25  0.0  0.0      0     0 ?        I<   20:46   0:00 [kblockd]
+root        26  0.0  0.0      0     0 ?        I<   20:46   0:00 [ata_sff]
+root        27  0.0  0.0      0     0 ?        I<   20:46   0:00 [md]
+root        28  0.0  0.0      0     0 ?        I<   20:46   0:00 [edac-poller]
+root        29  0.0  0.0      0     0 ?        I<   20:46   0:00 [devfreq_wq]
+root        30  0.0  0.0      0     0 ?        I<   20:46   0:00 [watchdogd]
+root        34  0.0  0.0      0     0 ?        S    20:46   0:00 [kswapd0]
+root        35  0.0  0.0      0     0 ?        S    20:46   0:00 [ecryptfs-kthrea]
+root        77  0.0  0.0      0     0 ?        I<   20:46   0:00 [kthrotld]
+root        78  0.0  0.0      0     0 ?        I<   20:46   0:00 [acpi_thermal_pm]
+root        79  0.0  0.0      0     0 ?        S    20:46   0:00 [scsi_eh_0]
+root        80  0.0  0.0      0     0 ?        I<   20:46   0:00 [scsi_tmf_0]
+root        81  0.0  0.0      0     0 ?        S    20:46   0:00 [scsi_eh_1]
+root        82  0.0  0.0      0     0 ?        I<   20:46   0:00 [scsi_tmf_1]
+root        88  0.0  0.0      0     0 ?        I<   20:46   0:00 [ipv6_addrconf]
+root        97  0.0  0.0      0     0 ?        I<   20:46   0:00 [kstrp]
+root       114  0.0  0.0      0     0 ?        I<   20:46   0:00 [charger_manager]
+root       154  0.0  0.0      0     0 ?        S    20:46   0:00 [scsi_eh_2]
+root       155  0.0  0.0      0     0 ?        I<   20:46   0:00 [scsi_tmf_2]
+root       156  0.0  0.0      0     0 ?        I<   20:46   0:00 [kworker/0:1H]
+root       253  0.0  0.0      0     0 ?        I    20:46   0:00 [kworker/0:2]
+root       261  0.0  0.0      0     0 ?        I<   20:46   0:00 [raid5wq]
+root       313  0.0  0.0      0     0 ?        S    20:46   0:00 [jbd2/vda1-8]
+root       314  0.0  0.0      0     0 ?        I<   20:46   0:00 [ext4-rsv-conver]
+root       381  0.0  0.0      0     0 ?        I<   20:46   0:00 [iscsi_eh]
+root       389  0.0  0.7  78456  7280 ?        S<s  20:46   0:00 /lib/systemd/systemd-journald
+root       396  0.0  0.1  97708  1832 ?        Ss   20:46   0:00 /sbin/lvmetad -f
+root       399  0.0  0.0      0     0 ?        I<   20:46   0:00 [ib-comp-wq]
+root       400  0.0  0.0      0     0 ?        I<   20:46   0:00 [ib_mcast]
+root       401  0.0  0.0      0     0 ?        I<   20:46   0:00 [ib_nl_sa_wq]
+root       402  0.0  0.0      0     0 ?        I<   20:46   0:00 [rdma_cm]
+systemd+   526  0.0  0.3 141916  3128 ?        Ssl  20:46   0:00 /lib/systemd/systemd-timesyncd
+systemd+   563  0.0  0.5  71960  5944 ?        Ss   20:46   0:00 /lib/systemd/systemd-networkd
+systemd+   575  0.0  0.4  70616  5016 ?        Ss   20:46   0:00 /lib/systemd/systemd-resolved
+root       662  0.0  0.3  42960  3960 ?        Ss   20:46   0:00 /lib/systemd/systemd-udevd
+root       798  0.0  0.5  70568  6032 ?        Ss   20:46   0:00 /lib/systemd/systemd-logind
+root       801  0.0  0.1  95540  1612 ?        Ssl  20:46   0:00 /usr/bin/lxcfs /var/lib/lxcfs/
+root       804  0.0  0.6 287980  6732 ?        Ssl  20:46   0:00 /usr/lib/accountsservice/accounts-daemo
+root       805  0.0  0.3  31748  3204 ?        Ss   20:46   0:00 /usr/sbin/cron -f
+message+   807  0.0  0.4  50052  4404 ?        Ss   20:46   0:00 /usr/bin/dbus-daemon --system --address
+root       822  0.0  1.9 187640 20168 ?        Ssl  20:46   0:00 /usr/bin/python3 /usr/share/unattended-
+root       825  0.0  1.6 170816 17024 ?        Ssl  20:46   0:00 /usr/bin/python3 /usr/bin/networkd-disp
+syslog     827  0.0  0.4 263036  4392 ?        Ssl  20:46   0:00 /usr/sbin/rsyslogd -n
+daemon     830  0.0  0.2  28332  2376 ?        Ss   20:46   0:00 /usr/sbin/atd -f
+root       836  0.0  0.6 288876  6516 ?        Ssl  20:46   0:00 /usr/lib/policykit-1/polkitd --no-debug
+root       847  0.0  0.2  16412  2412 ttyS0    Ss+  20:46   0:00 /sbin/agetty -o -p -- \u --keep-baud 11
+root       851  0.0  0.1  14888  1912 tty1     Ss+  20:46   0:00 /sbin/agetty -o -p -- \u --noclear tty1
+root       935  0.0  0.6  72296  6556 ?        Ss   20:46   0:00 /usr/sbin/sshd -D
+root      1056  0.0  0.7 107984  7216 ?        Ss   20:47   0:00 sshd: root@pts/0
+root      1065  0.0  0.7  76620  7464 ?        Ss   20:47   0:00 /lib/systemd/systemd --user
+root      1071  0.0  0.2 109312  2260 ?        S    20:47   0:00 (sd-pam)
+root      1174  0.0  0.5  23200  5180 pts/0    Ss   20:47   0:00 -bash
+root      1251  0.0  0.0      0     0 ?        I    21:01   0:00 [kworker/u2:1]
+root      1308  0.0  0.0      0     0 ?        I    21:09   0:00 [kworker/u2:0]
+root      1318  0.0  0.0      0     0 ?        I    21:09   0:00 [kworker/0:1]
+root      1488  0.0  0.3  40092  3544 pts/0    R+   21:55   0:00 ps aux
+
+
+
 * Run `top` and review the results. (Hint: You may need to use `ctrl-c` to get out of this app.) *How do you interpret what you see here?*
+
+top - 21:57:24 up  1:11,  1 user,  load average: 0.00, 0.00, 0.00
+Tasks:  78 total,   1 running,  43 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.3 sy,  0.0 ni, 99.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem :  1009156 total,   709180 free,    75336 used,   224640 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.   792560 avail Mem
+
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+ 1056 root      20   0  107984   7216   6196 S  0.3  0.7   0:00.18 sshd
+ 1489 root      20   0   44412   4000   3420 R  0.3  0.4   0:00.04 top
+    1 root      20   0   77628   8540   6452 S  0.0  0.8   0:01.64 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    4 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 kworker/0:0H
+    6 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 mm_percpu_wq
+    7 root      20   0       0      0      0 S  0.0  0.0   0:00.07 ksoftirqd/0
+    8 root      20   0       0      0      0 I  0.0  0.0   0:00.07 rcu_sched
+    9 root      20   0       0      0      0 I  0.0  0.0   0:00.00 rcu_bh
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+   11 root      rt   0       0      0      0 S  0.0  0.0   0:00.01 watchdog/0
+   12 root      20   0       0      0      0 S  0.0  0.0   0:00.01 cpuhp/0
+   13 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+   14 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 netns
+   15 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_tasks_kthre
+   16 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kauditd
+   17 root      20   0       0      0      0 S  0.0  0.0   0:00.00 khungtaskd
+   18 root      20   0       0      0      0 S  0.0  0.0   0:00.00 oom_reaper
+   19 root       0 -20       0      0      0 I  0.0  0.0   0:00.00 writeback
+   20 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kcompactd0
+   21 root      25   5       0      0      0 S  0.0  0.0   0:00.00 ksmd
+   22 root      39  19       0      0      0 S  0.0  0.0   0:00.00 khugepaged
+
 
 ### Finding and Viewing Files
 
 * Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. *How many files did you find?*
+
+
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
+
+
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
+
+
 * Use the `grep` command to search for text within a file. Use `grep` on all the `.user` files in `challenge_files` to find which files contain "WA" (the abbreviation for Washington state). *How many files did you find?*
+
+
 * Use the `-r` option of `grep` to *recursively* find the text "Waldo" hidden in a file somewhere under the `challenge_files` directory. *Paste the result showing the file and line where the word "Waldo" shows up.*
 
 ### Pipes and Connecting Commands
