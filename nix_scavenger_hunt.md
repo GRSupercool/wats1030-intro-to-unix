@@ -279,7 +279,10 @@ KiB Swap:        0 total,        0 free,        0 used.   792560 avail Mem
 -rw-r--r-- 1 root root 16240 Feb 16 21:12 credit_cards2.txt
 
 
-* Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
+* Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?* 
+
+Last updated 01-15-2015
+
 
 
 * Use the `find` command to search for files more effectively. Search the sub-directories under `challenge_files` to find the location of the file named `modi_laboriosam.txt`. *Where is that file located?*
