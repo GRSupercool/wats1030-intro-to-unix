@@ -57,25 +57,90 @@ etc   lib             mnt         run   sys   vmlinuz
 
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*  /
 
-/root
 
 
-* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*
+
+* Another special shortcut in Unix is the `~` location. This indicates the *user root* directory, meaning the top-most directory in the hierarchy that comes below your user account. Use `cd` to move to `~`. *Run `pwd` and paste the response here:*  /root
 
 
 * Change directory into the `challenge_files` directory. Use `ls` to find only the files with a `.demo` pattern. *How many files do you find?*
+-rw-r--r-- 1 root root 0 Feb 16 21:12 2015_special_stuff.demo
+-rw-r--r-- 1 root root 0 Feb 16 21:12 cloaked-wookie.demo
+-rw-r--r-- 1 root root 0 Feb 16 21:12 scooter-double-mamba.demo
+root@wats3020:~/wats1030-intro-to-unix/challenge_files#
 
 
 * Use the `cd` command to move "up" one directory. *Where are you in the filesystem now?*
+root@wats3020:~#
 
 
 * Press the up arrow on your keyboard. *What just happened?*
+root@wats3020:~# ls -al *.demo*
 
 
 * Press the up arrow a few more times. *What do you see?*
+root@wats3020:~# ls -a .demo*
 
 
 * Run the `history` command. *What do you see?*
+
+ 1  whoami
+    2  ls
+    3  https://github.com/GRSupercool/wats1030-intro-to-unix
+    4  sudo apt-get install git
+    5  git help -a
+    6  git config --global user.name "GRSupercool"
+    7  root@wats3020:~#
+    8  git config --global user.name "GRSupercool"
+    9  root@wats3020:~#
+   10  git config --global user.email "ms.georgina.ramirez@gmail.com"
+   11  git config --list
+   12  ls -al ~/.ssh
+   13  ssh-keygen -t rsa -b 4096 -C "ms.georgina.ramirez@gmail.com"
+   14  ls -al ~/.ssh
+   15  cat ~/.ssh/id_rsa.pub
+   16  git clone
+   17  git@github.com:GRSupercool/wats1030-intro-to-unix.git
+   18  git clone git@github.com:GRSupercool/wats1030-intro-to-unix.git
+   19  ls
+   20  cd wats1030-intro-to-unix/
+   21  ls
+   22  pwd
+   23  ls
+   24  ls -alh
+   25  man
+   26  man man
+   27  man ls
+   28  ls /
+   29  run pwd
+   30  cd/
+   31  cd /
+   32  pwd
+   33  cd
+   34  cd ~
+   35  pwd
+   36  ls
+   37  cd
+   38  cd wats
+   39  cd wats1030-intro-to-unix/
+   40  ls -a .demo
+   41  ls
+   42  cd challenge_files/
+   43  pwd
+   44  ls
+   45  ls -a
+   46  ls -a .demo
+   47  ls -a .demo*
+   48  ls -a *.demo*
+   49  ls -al *.demo*
+   50  cd
+   51  ls -al *.demo*
+   52  ls -a .demo*
+   53  r
+   54  -r
+   55  hostory
+   56  history
+
 
 ### Observing the System
 
