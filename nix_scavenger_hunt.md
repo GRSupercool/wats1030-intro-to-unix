@@ -23,6 +23,18 @@ LICENSE    challenge_files        nix_scavenger_hunt_stretch.md
 README.md  nix_scavenger_hunt.md  super_scavengers.md
 
 * You can use *options* to modify how a command runs. Try using `ls -alh` to see the contents of your current directory. *How are the results different when you use the `-alh` options?*
+total 40K
+drwxr-xr-x 4 root root 4.0K Feb 16 21:12 .
+drwx------ 6 root root 4.0K Feb 16 21:12 ..
+drwxr-xr-x 8 root root 4.0K Feb 16 21:12 .git
+-rw-r--r-- 1 root root 1.1K Feb 16 21:12 LICENSE
+-rw-r--r-- 1 root root 2.7K Feb 16 21:12 README.md
+drwxr-xr-x 7 root root 4.0K Feb 16 21:12 challenge_files
+-rw-r--r-- 1 root root 5.4K Feb 16 21:12 nix_scavenger_hunt.md
+-rw-r--r-- 1 root root  319 Feb 16 21:12 nix_scavenger_hunt_stretch.md
+-rw-r--r-- 1 root root  255 Feb 16 21:12 super_scavengers.md
+
+
 * The `man` ("manual") command tells you more about how any given command works. (*WARNING:* CodeAnywhere does not support the man command. You can click the following link to complete this task: http://man.he.net/). Run `man` to see instructions about how to use `man`. Then use `man` to learn what the `a`, `l`, and `h` options mean when used with the `ls` command. *Write down what those options do?*
 * Commands can also take *arguments*, which are usually the names of files or locations that you want the command to work with. Try running `ls /` to see what files are in the *root* directory of the filesystem. *What files and directories do you see listed?*
 * A Unix filesystem has a few special shortcuts to refer to specific locations. `/` indicates the *root* of the filesystem, meaning the top-most directory in the filesystem hierarchy. Use the `cd` ("change directory") command to move to the root directory. (Hint: Use `man` to look up the `cd` command if you have any issues) *Then run `pwd` and paste the output here:*
