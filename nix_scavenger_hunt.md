@@ -274,7 +274,9 @@ KiB Swap:        0 total,        0 free,        0 used.   792560 avail Mem
 
 ### Finding and Viewing Files
 
-* Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. *How many files did you find?*
+* Make sure you are in the `challenge_files` directory. Use the `*` wildcard to find all the files that have the word "credit" in the filename. *How many files did you find?* two 
+-rw-r--r-- 1 root root 16275 Feb 16 21:12 credit_cards.txt
+-rw-r--r-- 1 root root 16240 Feb 16 21:12 credit_cards2.txt
 
 
 * Use the `more` command to view one of the `credit_cards` files you just discovered. (Hint: Type `q` to quit viewing the file. Press the `spacebar` to page down. Use your keyboard arrows to move up/down.) *What is the date in the file you have viewed?*
