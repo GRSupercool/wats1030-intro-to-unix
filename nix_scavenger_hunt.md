@@ -296,6 +296,58 @@ Last updated 01-15-2015
 
 ### Pipes and Connecting Commands
 
-* Sometimes it's useful to output the results of a command to a text file for further analysis, reference, or processing. Try running `ls > files.txt`. Notice that the file `files.txt` was created. View that file using `more`. *What do you see in the `files.txt` file?*
-* Notice that if you run `ls -alh` in the `challenge_files` directory, the files scroll by very quickly. Sometimes it would be better to get the results in a paginated format. Try running `ls -alh | more`. *Describe what you see when you run `ls -alh | more`.*
-* Earlier, when you viewed the list of active processes on your devbox using `ps aux`, the list was probably really long. You can make this list more manageable by using the pipe (`|`) to filter the results of `ps` using `grep`. Run `ps aux | grep <your_username>` to see what processes are running for your specific user. *Paste the list of processes that reference your username here:*
+* Sometimes it's useful to output the results of a command to a text file for further analysis, reference, or processing. Try running `ls > files.txt`. Notice that the file `files.txt` was created. View that file using `more`. *What do you see in the `files.txt` file?*  01
+2015_special_stuff.demo
+Afton-Jast.user
+Aimee-Maggio.user
+Alfonso-Gottlieb.user
+Allen-Kemmer.user
+Almina-Cormier.user
+Alta-Lemke.user
+Amina-McGlynn.user
+Anabel-Hammes.user
+Ancel-Conn.user
+Anjali-Halvorson.user
+Ardath-Kuvalis.user
+Avah-Dickinson.user
+Ayaan-Stiedemann.user
+Aylin-Grant.user
+Bedford-Sipes.user
+Benita-King.user
+Benito-Stoltenberg.user
+Beverlee-Moen.user
+Brad-Thiel.user
+Brayan-Douglas.user
+Bria-Satterfield.user
+--More--(20%)
+
+
+
+* Notice that if you run `ls -alh` in the `challenge_files` directory, the files scroll by very quickly. Sometimes it would be better to get the results in a paginated format. Try running `ls -alh | more`. *Describe what you see when you run `ls -alh | more`.*total 460K
+drwxr-xr-x 7 root root 4.0K Feb 27 02:08 .
+drwxr-xr-x 4 root root 4.0K Feb 25 18:13 ..
+drwxr-xr-x 2 root root 4.0K Feb 25 18:13 01
+-rw-r--r-- 1 root root    0 Feb 25 18:13 2015_special_stuff.demo
+-rw-r--r-- 1 root root   93 Feb 25 18:13 Afton-Jast.user
+-rw-r--r-- 1 root root   85 Feb 25 18:13 Aimee-Maggio.user
+-rw-r--r-- 1 root root   79 Feb 25 18:13 Alfonso-Gottlieb.user
+-rw-r--r-- 1 root root  100 Feb 25 18:13 Allen-Kemmer.user
+-rw-r--r-- 1 root root   86 Feb 25 18:13 Almina-Cormier.user
+-rw-r--r-- 1 root root   87 Feb 25 18:13 Alta-Lemke.user
+-rw-r--r-- 1 root root   79 Feb 25 18:13 Amina-McGlynn.user
+-rw-r--r-- 1 root root   78 Feb 25 18:13 Anabel-Hammes.user
+-rw-r--r-- 1 root root   61 Feb 25 18:13 Ancel-Conn.user
+-rw-r--r-- 1 root root   87 Feb 25 18:13 Anjali-Halvorson.user
+-rw-r--r-- 1 root root   64 Feb 25 18:13 Ardath-Kuvalis.user
+-rw-r--r-- 1 root root   90 Feb 25 18:13 Avah-Dickinson.user
+-rw-r--r-- 1 root root   79 Feb 25 18:13 Ayaan-Stiedemann.user
+-rw-r--r-- 1 root root   79 Feb 25 18:13 Aylin-Grant.user
+-rw-r--r-- 1 root root   70 Feb 25 18:13 Bedford-Sipes.user
+-rw-r--r-- 1 root root   82 Feb 25 18:13 Benita-King.user
+-rw-r--r-- 1 root root   92 Feb 25 18:13 Benito-Stoltenberg.user
+-rw-r--r-- 1 root root   83 Feb 25 18:13 Beverlee-Moen.user
+
+
+
+* Earlier, when you viewed the list of active processes on your devbox using `ps aux`, the list was probably really long. You can make this list more manageable by using the pipe (`|`) to filter the results of `ps` using `grep`. Run `ps aux | grep <your_username>` to see what processes are running for your specific user. *Paste the list of processes that reference your username here:*  root     17590  0.0  0.1  14856  1084 pts/0    S+   02:14   0:00 grep --color=auto georgina
+
